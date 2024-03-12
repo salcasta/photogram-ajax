@@ -26,15 +26,3 @@
     </div>
   </div>
 </li>
-
-<script>
-  $("#comment_<%= comment.id %>_delete_link").on("click", function() {
-    $.ajax({
-      url: "/comments/<%= comment.id %>",
-      type: "DELETE",
-      dataType: "script"
-    });
-
-    return false;
-  });
-</script>
