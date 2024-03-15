@@ -34,7 +34,6 @@ class CommentsController < ApplicationController
       if @comment.save
         format.html { redirect_back fallback_location: root_path, notice: "Comment was successfully created." }
         format.json { render :show, status: :created, location: @comment }
-        # This is the concise version since everything is named the same
         format.js
       else
         format.html { render :new, status: :unprocessable_entity }
