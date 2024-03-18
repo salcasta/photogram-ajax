@@ -5,5 +5,5 @@ var updatedLikes = $("<%= j(render "photos/likes", photo: @like.photo) %>");
 existingLikes.replaceWith(updatedLikes);
 
 var icon = $("#<%= dom_id(@like.photo) %>_likes_icon");
-icon.addClass("fa-beat");
-icon.css("--fa-animation-iteration-count", "1");
+icon.addClass("fa-bounce");
+icon.css("--fa-animation-iteration-count", "2");
