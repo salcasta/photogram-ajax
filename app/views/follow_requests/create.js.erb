@@ -1,0 +1,5 @@
+console.log("Request sent")
+
+var sendRequest=$("<%= j(render "follow_requests/follow_unfollow", sender: @follow_request.sender, recipient: @follow_request.recipient) %>" )
+
+$(".follow_request_form").replaceWith(sendRequest)
